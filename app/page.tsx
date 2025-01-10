@@ -1,7 +1,7 @@
-import Info from '@/app/pages/Info';
-import Rules from '@/app/pages/Rules';
-import Sponsors from '@/app/pages/Sponsors';
-import FAQ from '@/app/pages/FAQ';
+import Info from '@/app/sections/Info';
+import Rules from '@/app/sections/Rules';
+import Sponsors from '@/app/sections/Sponsors';
+import FAQ from '@/app/sections/FAQ';
 
 export default function Home() {
     return (
