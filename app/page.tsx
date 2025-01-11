@@ -1,5 +1,5 @@
 import Info from '@/app/sections/Info';
-import Rules from '@/app/sections/Rules';
+import About from '@/app/sections/About';
 import Sponsors from '@/app/sections/Sponsors';
 import FAQ from '@/app/sections/FAQ';
 
@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <main>
             <Info />
-            <Rules />
+            <About />
             <Sponsors />
             <FAQ />
         </main>
