@@ -10,8 +10,6 @@ const Navbar = () => {
     // const [mounted, setMounted] = useState(false);
     const pathname = usePathname();
 
-    
-
     const menuVariants = {
         closed: {
             opacity: 0,
@@ -83,8 +81,8 @@ const Navbar = () => {
                     <div className="flex items-center">
                         TMP LOGO
                         {/* <Link href="/" className="text-xl font-bold">
-              {renderLogo()}
-            </Link> */}
+                        {renderLogo()}
+                        </Link> */}
                     </div>
 
                     {/* Desktop Menu */}
@@ -95,13 +93,16 @@ const Navbar = () => {
                                 href={item.href}
                                 className={`px-3 py-2 rounded-md text-sm font-bold transition-all duration-500 ${
                                     isActive(item.href)
-                                        ? 'text-foreground'
-                                        : 'text-dim hover:text-destructive hover:outline-2 hover:outline-offset-2 hover:outline-destructive'
+                                        ? 'text-highlight'
+                                        : 'text-foreground hover:text-highlight hover:outline-2 hover:outline-offset-2 hover:outline-highlight'
                                 }`}
                             >
                                 {item.label}
                             </Link>
                         ))}
+                        <button className="ml-4 px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm">
+                            Apply
+                        </button>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -145,7 +146,11 @@ const Navbar = () => {
                             exit="closed"
                             variants={menuVariants}
                         >
-                            <div className="px-2 pt-2 pb-3 h-screen space-y-1">
+                            <div className="flex flex-col items-center px-2 pt-2 pb-3 h-screen w-full space-y-1 ">
+                                <button className="px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm">
+                                    Apply
+                                </button>
+
                                 {navItems.map((item) => (
                                     <motion.div
                                         key={item.label}
@@ -156,8 +161,8 @@ const Navbar = () => {
                                             href={item.href}
                                             className={`text-center block px-3 py-2 rounded-md font-bold transition-colors ${
                                                 isActive(item.href)
-                                                    ? 'text-background bg-foreground'
-                                                    : 'text-foreground hover:text-background hover:bg-destructive'
+                                                    ? 'text-highlight bg-foreground'
+                                                    : 'text-foreground hover:text-highlight hover:bg-dim'
                                             }`}
                                             onClick={() => setIsOpen(false)}
                                         >
