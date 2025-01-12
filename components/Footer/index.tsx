@@ -14,12 +14,12 @@ const Content = () => {
         <div className="w-full h-full bg-white pt-8 px-8">
             <div className="grid grid-cols-2 h-full gap-8">
                 {/* About */}
-                <h3 className="p-2 font-theme font-bold h-full text-6xl text-background [writing-mode:vertical-lr] sm:[writing-mode:horizontal-tb]">
+                <h3 className=" font-theme font-bold h-full text-6xl text-background [writing-mode:vertical-lr] sm:[writing-mode:horizontal-tb]">
                     HackXR
                 </h3>
 
                 {/* Social */}
-                <ul className="justify-center items-center h-full  rounded-t-xl py-2 sm:flex gap-16 space-y-4 sm:space-y-0 bg-background">
+                <ul className="justify-center items-center h-full rounded-t-xl sm:pt-2 pt-8 sm:flex gap-16 space-y-4 sm:space-y-0 bg-background">
                     {links.map(({ Icon, href }) => (
                         <li key={href}>
                             <a
