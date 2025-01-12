@@ -2,8 +2,8 @@ import React from 'react';
 
 function Rules() {
     return (
-        <div id="rules" className="h-screen w-full border-white border">
-            Rules
+        <div id="about" className="h-screen w-full border-white border">
+            About
         </div>
     );
 }
