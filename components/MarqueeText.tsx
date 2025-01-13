@@ -11,9 +11,11 @@ const MarqueeText: React.FC<MarqueeProps>=({ text, direction }) => {
     <Marquee
             autoFill={true}
             direction={direction}
-            className="bg-foreground py-4 sm:py-2 select-none"
+            className="overflow-hidden bg-background select-none"
+            gradient={true}
+            gradientColor={'var(--background)'}
           >
-            <span className="font-black text-xl text-background">
+            <span className="font-black text-xl py-2 inline-block text-foreground">
               ✦ {text}&nbsp;
             </span>
     </Marquee>

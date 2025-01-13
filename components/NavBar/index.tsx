@@ -9,6 +9,8 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     // const [mounted, setMounted] = useState(false);
     const pathname = usePathname();
+    const applyLink =
+        'https://docs.google.com/forms/d/e/1FAIpQLSfIIpqZpxVWPW904CReY_0yQmbnmeEMTjQohzgCQnFKcr9wHw/viewform?usp=dialog';
 
     const menuVariants = {
         closed: {
@@ -100,9 +102,14 @@ const Navbar = () => {
                                 {item.label}
                             </Link>
                         ))}
-                        <button className="ml-4 px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm">
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={applyLink}
+                            className="ml-4 px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm"
+                        >
                             Apply
-                        </button>
+                        </a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -147,9 +154,14 @@ const Navbar = () => {
                             variants={menuVariants}
                         >
                             <div className="flex flex-col items-center px-2 pt-2 pb-3 h-screen w-full space-y-1 ">
-                                <button className="px-3 py-1 rounded-full bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-md">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href={applyLink}
+                                    className="px-3 py-1 rounded-full bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-md"
+                                >
                                     Apply
-                                </button>
+                                </a>
 
                                 {navItems.map((item) => (
                                     <motion.div
