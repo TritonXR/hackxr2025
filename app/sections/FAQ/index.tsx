@@ -18,7 +18,7 @@ const FAQData = [
 
 function FAQ() {
     return (
-        <div id="faq" className="h-screen w-full border-white border">
+        <main id="faq" className="h-screen w-full border-white border">
             <h1 className='py-4 text-center'>Frequently Asked Questions</h1>
             <div className="max-w-2xl mx-auto">
                 <div className="rounded-lg divide-y-4 divide-black">
@@ -31,7 +31,7 @@ function FAQ() {
                     ))}
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
 
