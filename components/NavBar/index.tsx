@@ -56,7 +56,7 @@ const Navbar = () => {
 
     const navItems = [
         { label: 'Info', href: '#info' },
-        { label: 'Rules', href: '#rules' },
+        { label: 'About', href: '#about' },
         { label: 'Sponsors', href: '#sponsors' },
         { label: 'FAQ', href: '#faq' },
     ];

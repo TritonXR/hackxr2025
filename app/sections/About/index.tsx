@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Rules() {
+function About() {
     return (
         <main id="rules" className="pt-16 h-screen w-full border-white border">
-            Rules
+            About
         </main>
     );
 }
 
-export default Rules;
+export default About;
