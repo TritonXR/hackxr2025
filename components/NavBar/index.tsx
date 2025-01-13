@@ -147,7 +147,7 @@ const Navbar = () => {
                             variants={menuVariants}
                         >
                             <div className="flex flex-col items-center px-2 pt-2 pb-3 h-screen w-full space-y-1 ">
-                                <button className="px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm">
+                                <button className="px-3 py-1 rounded-full bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-md">
                                     Apply
                                 </button>
 
@@ -159,11 +159,7 @@ const Navbar = () => {
                                     >
                                         <Link
                                             href={item.href}
-                                            className={`text-center block px-3 py-2 rounded-md font-bold transition-colors ${
-                                                isActive(item.href)
-                                                    ? 'text-highlight bg-foreground'
-                                                    : 'text-foreground hover:text-highlight hover:bg-dim'
-                                            }`}
+                                            className="text-center block px-3 py-2 font-bold hover:bg-highlight rounded-full transition-colors"
                                             onClick={() => setIsOpen(false)}
                                         >
                                             {item.label}
