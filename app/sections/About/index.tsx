@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
     return (
-        <main id="rules" className="pt-16 h-screen w-full border-white border">
+        <main id="about" className="pt-16 h-screen w-full border-white border">
             About
         </main>
     );
