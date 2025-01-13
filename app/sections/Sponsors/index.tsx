@@ -3,7 +3,7 @@ import SponsorItems from './components/SponsorItems';
 
 function Sponsors() {
     return (
-        <main id="sponsors" className="h-screen w-full border border-white">
+        <main id="sponsors" className="pt-16 h-screen w-full border border-white">
             <h1 className="text-center">Our Sponsors</h1>
             <SponsorItems />
         </main>

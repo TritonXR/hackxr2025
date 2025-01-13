@@ -18,8 +18,8 @@ const FAQData = [
 
 function FAQ() {
     return (
-        <main id="faq" className="h-screen w-full border-white border">
-            <h1 className='py-4 text-center'>Frequently Asked Questions</h1>
+        <main id="faq" className="pt-16 h-screen w-full border-white border">
+            <h1 className="py-4 text-center">Frequently Asked Questions</h1>
             <div className="max-w-2xl mx-auto">
                 <div className="rounded-lg divide-y-4 divide-black">
                     {FAQData.map((faq, index) => (
