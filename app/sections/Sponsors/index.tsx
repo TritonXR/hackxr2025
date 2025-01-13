@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import SponsorItems from './components/SponsorItems';
 
 function Sponsors() {
-  return (
-    <div id='sponsors' className='pt-16 h-screen w-full border border-white'>Sponsors</div>
-  )
+    return (
+        <main id="sponsors" className="pt-16 h-screen w-full border border-white">
+            <h1 className="text-center">Our Sponsors</h1>
+            <SponsorItems />
+        </main>
+    );
 }
 
-export default Sponsors
+export default Sponsors;
