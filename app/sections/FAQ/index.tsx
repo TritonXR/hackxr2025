@@ -3,16 +3,20 @@ import FAQItem from './components/FAQItem';
 
 const FAQData = [
     {
-        question: 'blah blah',
-        answer: 'hur hur',
+        question: 'Do I need experience to join?',
+        answer: 'No experience is needed! We will be hosting workshops prior to the event to help prep students for the Hackathon.',
     },
     {
-        question: 'blah blah',
-        answer: 'hur hur',
+        question: 'What do I need to bring?',
+        answer: 'Please bring your laptop, headset (if you have your own), and chargers.',
     },
     {
-        question: 'blah blah',
-        answer: 'hur hur',
+        question: 'Do I need to bring or own a headset to participate?',
+        answer: 'No! We will provide Metaquest 2 and 3 headsets for participants to borrow during the hackathon.',
+    },
+    {
+        question: 'Will food be provided?',
+        answer: 'Yes! We will be providing lunch and dinner for both hackathon days.',
     },
 ];
 

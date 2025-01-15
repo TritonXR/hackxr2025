@@ -133,7 +133,7 @@ const SponsorMarquee = () => {
                 <Marquee
                     autoFill={true}
                     direction="left"
-                    className="py-4"
+                    className="py-4 w-full"
                     speed={20}
                     pauseOnHover={true}
                 >

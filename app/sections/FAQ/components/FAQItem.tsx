@@ -15,7 +15,7 @@ const FAQItem: React.FC<FAQItemProp> = ({ question, answer }) => {
         <div>
             <button
                 className={`bg-white rounded-t-xl flex w-full justify-between items-center py-4 px-6 text-left group hover:border-highlight hover:border-4 border-4 border-dim
-                    ${!isOpen && 'rounded-b-xl [transition:border-radius_200ms_ease_500ms]'}`}
+                    ${!isOpen && 'rounded-b-xl [transition:border-radius_200ms_ease_300ms]'}`}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <h2 className="text-black group-hover:text-highlight group-hover:translate-x-2 transition-all duration-200">
@@ -27,7 +27,7 @@ const FAQItem: React.FC<FAQItemProp> = ({ question, answer }) => {
                 />
             </button>
             <div
-                className={`overflow-hidden transition-all duration-500 bg-dim rounded-b-xl
+                className={`overflow-hidden transition-all duration-300 bg-dim rounded-b-xl
                 ${isOpen ? 'max-h-96' : 'max-h-0'}`}
             >
                 <div className="px-10 py-4">
