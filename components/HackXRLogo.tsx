@@ -24,7 +24,7 @@ const HackXRLogo = ({ className = '', width = '100%', height = 'auto', color = '
           viewBox="0 0 670 200"
           width={width}
           height={height}
-          className={`absolute top-0 left-0 ${className} ${animation ? 'hover-bounce' : ''}`}
+          className={`absolute top-0 left-0 ${className} ${animation ? 'smooth-slide' : ''}`}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -36,17 +36,13 @@ const HackXRLogo = ({ className = '', width = '100%', height = 'auto', color = '
       </div>
 
       <style global jsx>{`
-        .group:hover .hover-bounce {
-          animation: bounceRight 1s ease-in-out infinite;
+        .smooth-slide {
+          transition: transform 0.3s ease-out;
         }
         
-        @keyframes bounceRight {
-          0%, 100% {
-            transform: translateX(0);
-          }
-          50% {
-            transform: translateX(10px);
-          }
+        .group:hover .smooth-slide {
+          transform: translateX(20px);
+          transition: transform 0.3s ease-in;
         }
       `}</style>
     </>
