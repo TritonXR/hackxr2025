@@ -21,7 +21,7 @@ const MarqueeText: React.FC<MarqueeProps> = ({ text, direction }) => {
             speed={5}
         >
             <span className="font-black text-xl py-2 inline-block text-foreground">
-                ✦ {text}&nbsp;
+            ✖ {text}&nbsp;
             </span>
         </Marquee>
     );

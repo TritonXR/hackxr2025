@@ -1,22 +1,22 @@
 import React from 'react';
-// import TXRLogo from '@/public/Triton_XR_Logo.png';
-// import Image from 'next/image';
+import AboutStars from '@/components/AboutStars';
 import AboutHeader from './components/AboutHeader';
 
 function About() {
     return (
         <main
             id="about"
-            className="h-screen w-full relative flex flex-col justify-center items-center"
+            className="h-screen w-full relative flex flex-col justify-center items-center p-8"
         >
             <div>
-                {/* <Image
-                    src={TXRLogo}
-                    width={500}
-                    height={500}
-                    alt="TXR Logo"
-                    className="opacity-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                /> */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl">
+                    <div className="w-full animate-[spin_300s_linear_infinite] blur-sm">
+                        <AboutStars
+                            color="highlight"
+                            className="w-full"
+                        />
+                    </div>
+                </div>
                 <div className="relative z-10 h-full">
                     <AboutHeader />
                     <h3 className="max-w-2xl text-center ">
