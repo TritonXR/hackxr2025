@@ -7,9 +7,8 @@ function Sponsors() {
             id="sponsors"
             className="pt-16 h-screen w-full border border-white flex items-center"
         >
-            {/* DO NOT APPLY FLEX TO MARQUEE IT WILL CAUSE YOU TO RUN OUT OF MEMORY */}
+            {/* DO NOT APPLY FLEX TO MARQUEE WITHOUT PROPER WIDTH CONSTRAINTS*/}
             <div className='w-full'>
-                <h1 className="text-center">Our Sponsors</h1>
                 <SponsorItems />
             </div>
         </main>
