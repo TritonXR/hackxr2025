@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import { FaDiscord, FaInstagram } from 'react-icons/fa';
+import HackXRLogo from '../HackXRLogo';
 
 const Content = () => {
     const linkStyle =
@@ -11,17 +14,18 @@ const Content = () => {
     ];
 
     return (
-        <div className="w-full h-full bg-white pt-8 px-8">
-            <div className="grid grid-cols-2 h-full gap-8">
+        <div className="w-full bg-white pt-8 px-8">
+            <div className="grid grid-cols-2 gap-8">
                 {/* About */}
-                <div className='flex flex-col'>
-                    <h1 className=" font-theme font-bold text-6xl text-background [writing-mode:vertical-lr] sm:[writing-mode:horizontal-tb]">
-                        HackXR
-                    </h1>
-                    <h3 className='font-bold text-black'>TritonXR <span className='text-highlight'>@ UC San Diego</span></h3>
+                <div className="flex flex-col items-start">
+                    <HackXRLogo color="black" animation={false} height="4rem" />
+                    <h3 className="font-bold text-black">
+                        TritonXR{' '}
+                        <span className="text-highlight">@ UC San Diego</span>
+                    </h3>
                 </div>
                 {/* Social */}
-                <ul className="justify-center items-center h-full rounded-t-xl sm:pt-2 pt-8 sm:flex gap-16 space-y-4 sm:space-y-0 bg-background">
+                <ul className="justify-center items-center rounded-t-xl py-8 sm:flex gap-16 space-y-4 sm:space-y-0 bg-background">
                     {links.map(({ Icon, href }) => (
                         <li key={href}>
                             <a
@@ -43,11 +47,11 @@ const Content = () => {
 const Footer = () => {
     return (
         <div
-            className="relative h-[300px] sm:h-[150px]"
+            className="relative h-[200px] sm:h-[140px]"
             style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}
         >
-            <div className="relative h-[calc(100vh+300px)] sm:h-[calc(100vh+150px)] -top-[100vh]">
-                <div className="h-[300px] sm:h-[150px] sticky top-[calc(100vh-300px)] sm:top-[calc(100vh-150px)]">
+            <div className="relative h-[calc(100vh+200px)] sm:h-[calc(100vh+140px)] -top-[100vh]">
+                <div className="h-[200px] sm:h-[140px] sticky top-[calc(100vh-200px)] sm:top-[calc(100vh-140px)]">
                     <Content />
                 </div>
             </div>

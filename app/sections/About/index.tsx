@@ -9,12 +9,9 @@ function About() {
             className="h-screen w-full relative flex flex-col justify-center items-center p-8"
         >
             <div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl overflow-hidden">
                     <div className="w-full animate-[spin_300s_linear_infinite] blur-sm">
-                        <AboutStars
-                            color="highlight"
-                            className="w-full"
-                        />
+                        <AboutStars color="highlight" className="w-full" />
                     </div>
                 </div>
                 <div className="relative z-10 h-full">
