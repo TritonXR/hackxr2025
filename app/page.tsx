@@ -8,11 +8,11 @@ export default function Home() {
     return (
         <main>
             <Info />
-            <MarqueeText text="PLACEHOLDER" direction='right'/>
+            <MarqueeText text="WHO WE ARE" direction='right'/>
             <About />
-            <MarqueeText text="PLACEHOLDER" direction='left'/>
+            <MarqueeText text="OUR SPONSORS" direction='left'/>
             <Sponsors />
-            <MarqueeText text="PLACEHOLDER" direction='right'/>
+            <MarqueeText text="FAQ" direction='right'/>
             <FAQ />
         </main>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaDiscord, FaInstagram} from 'react-icons/fa';
+import { FaDiscord, FaInstagram } from 'react-icons/fa';
 
 const Content = () => {
     const linkStyle =
@@ -14,10 +14,12 @@ const Content = () => {
         <div className="w-full h-full bg-white pt-8 px-8">
             <div className="grid grid-cols-2 h-full gap-8">
                 {/* About */}
-                <h3 className=" font-theme font-bold h-full text-6xl text-background [writing-mode:vertical-lr] sm:[writing-mode:horizontal-tb]">
-                    HackXR
-                </h3>
-
+                <div className='flex flex-col'>
+                    <h1 className=" font-theme font-bold text-6xl text-background [writing-mode:vertical-lr] sm:[writing-mode:horizontal-tb]">
+                        HackXR
+                    </h1>
+                    <h3 className='font-bold text-black'>TritonXR <span className='text-highlight'>@ UC San Diego</span></h3>
+                </div>
                 {/* Social */}
                 <ul className="justify-center items-center h-full rounded-t-xl sm:pt-2 pt-8 sm:flex gap-16 space-y-4 sm:space-y-0 bg-background">
                     {links.map(({ Icon, href }) => (
