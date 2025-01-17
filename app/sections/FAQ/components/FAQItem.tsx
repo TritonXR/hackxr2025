@@ -14,15 +14,15 @@ const FAQItem: React.FC<FAQItemProp> = ({ question, answer }) => {
     return (
         <div>
             <button
-                className={`bg-white rounded-t-xl flex w-full justify-between items-center py-4 px-6 text-left group hover:border-highlight hover:border-4 border-4 border-dim
-                    ${!isOpen && 'rounded-b-xl [transition:border-radius_200ms_ease_300ms]'}`}
+                className={`bg-background flex w-full justify-between items-center py-4 px-6 text-left group hover:border-highlight border-2 border-dim
+                    ${!isOpen && '[transition:border-radius_200ms_ease_300ms]'}`}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <h2 className="text-black group-hover:text-highlight group-hover:translate-x-2 transition-all duration-200">
+                <h2 className="text-dim group-hover:text-highlight group-hover:translate-x-2 transition-all duration-200">
                     {question}
                 </h2>
                 <ChevronDown
-                    className={`h-5 w-5 text-background group-hover:text-highlight transition-all duration-200
+                    className={`h-5 w-5 text-foreground group-hover:text-highlight transition-all duration-200
                     ${isOpen ? 'rotate-180' : 'rotate-0'}`}
                 />
             </button>

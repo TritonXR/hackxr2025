@@ -5,7 +5,7 @@
 :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --highlight: #3A39FF;
+    --highlight: #a389ff;
     --dim: #000000;
     --accent: #000000;
 }
@@ -14,8 +14,8 @@
     :root {
         --background: #0a0a0a;
         --foreground: #ededed;
-        --highlight: #3A39FF;
-        --dim: #dddcdc;
+        --highlight: #6c47ff;
+        --dim: #818181;
         --accent: #000000;
     }
 }

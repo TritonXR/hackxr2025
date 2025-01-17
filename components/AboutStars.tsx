@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AboutStars = ({ 
-  color = 'white',
+  color = 'fill-white',
   className = '',
   ...props 
 }) => {
@@ -10,7 +10,7 @@ const AboutStars = ({
       viewBox="0 0 179 179"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`p-8 w-full h-auto ${className}`}
+      className={`p-8 w-full h-auto ${color} ${className}`}
       {...props}
     >
       <path

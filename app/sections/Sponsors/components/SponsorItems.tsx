@@ -104,7 +104,7 @@ const SponsorMarquee = () => {
                 href={sponsor.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-4 block"
+                className="mx-4 block grayscale hover:grayscale-0"
             >
                 <div className="transition-all duration-300 hover:scale-105">
                     {sponsor.logo && (
@@ -127,63 +127,57 @@ const SponsorMarquee = () => {
     };
 
     return (
-        <div className="py-4">
+        <div className="pt-4 pb-12">
             {/* High Tier */}
-            <div className="flex-1 min-h-0 flex items-center">
-                <Marquee
-                    autoFill={true}
-                    direction="left"
-                    className="py-4 w-full"
-                    speed={20}
-                    pauseOnHover={true}
-                >
-                    {sponsorsByTier.High.map((sponsor) => (
-                        <SponsorCard
-                            key={sponsor.id}
-                            sponsor={sponsor}
-                            size="large"
-                        />
-                    ))}
-                </Marquee>
-            </div>
+            <Marquee
+                autoFill={true}
+                direction="right"
+                className="py-4 w-full"
+                speed={20}
+                pauseOnHover={true}
+            >
+                {sponsorsByTier.High.map((sponsor) => (
+                    <SponsorCard
+                        key={sponsor.id}
+                        sponsor={sponsor}
+                        size="large"
+                    />
+                ))}
+            </Marquee>
 
             {/* Medium Tier */}
-            <div className="flex-1 min-h-0 flex items-center">
-                <Marquee
-                    autoFill={true}
-                    direction="right"
-                    className="py-4"
-                    speed={30}
-                    pauseOnHover={true}
-                >
-                    {sponsorsByTier.Medium.map((sponsor) => (
-                        <SponsorCard
-                            key={sponsor.id}
-                            sponsor={sponsor}
-                            size="medium"
-                        />
-                    ))}
-                </Marquee>
-            </div>
+            <Marquee
+                autoFill={true}
+                direction="left"
+                className="py-4"
+                speed={30}
+                pauseOnHover={true}
+            >
+                {sponsorsByTier.Medium.map((sponsor) => (
+                    <SponsorCard
+                        key={sponsor.id}
+                        sponsor={sponsor}
+                        size="medium"
+                    />
+                ))}
+            </Marquee>
 
             {/* Low Tier */}
-            <div className="flex-1 min-h-0 flex items-center">
-                <Marquee
-                    autoFill={true}
-                    direction="left"
-                    className="py-4"
-                    speed={40}
-                    pauseOnHover={true}
-                >
-                    {sponsorsByTier.Low.map((sponsor) => (
-                        <SponsorCard
-                            key={sponsor.id}
-                            sponsor={sponsor}
-                            size="small"
-                        />
-                    ))}
-                </Marquee>
-            </div>
+            <Marquee
+                autoFill={true}
+                direction="right"
+                className="py-4"
+                speed={40}
+                pauseOnHover={true}
+            >
+                {sponsorsByTier.Low.map((sponsor) => (
+                    <SponsorCard
+                        key={sponsor.id}
+                        sponsor={sponsor}
+                        size="small"
+                    />
+                ))}
+            </Marquee>
         </div>
     );
 };
