@@ -15,6 +15,11 @@ export default {
                 dim: 'var(--dim)',
                 accent: 'var(--accent)',
             },
+            fontFamily: {
+                sans: ['var(--font-space-grotesk)', 'sans-serif'],
+                geist: ['var(--font-geist-sans)', 'sans-serif'],
+                mono: ['var(--font-geist-mono)', 'monospace'],
+            },
         },
     },
     plugins: [],

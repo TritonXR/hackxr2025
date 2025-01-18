@@ -12,9 +12,9 @@ const FAQItem: React.FC<FAQItemProp> = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <div>
+        <div className='group'>
             <button
-                className={`bg-background flex w-full justify-between items-center py-4 px-6 text-left group hover:border-highlight border-2 border-dim
+                className={`bg-background flex w-full justify-between items-center py-4 px-6 text-left group-hover:border-highlight border-2 border-dim
                     ${!isOpen && '[transition:border-radius_200ms_ease_300ms]'}`}
                 onClick={() => setIsOpen(!isOpen)}
             >
@@ -27,11 +27,11 @@ const FAQItem: React.FC<FAQItemProp> = ({ question, answer }) => {
                 />
             </button>
             <div
-                className={`overflow-hidden transition-all duration-300 bg-dim rounded-b-xl
+                className={`overflow-hidden transition-all group-hover:bg-highlight duration-300 bg-dim rounded-b-xl
                 ${isOpen ? 'max-h-96' : 'max-h-0'}`}
             >
                 <div className="px-10 py-4">
-                    <p className="text-gray-600">{answer}</p>
+                    <p className="text-background">{answer}</p>
                 </div>
             </div>
         </div>

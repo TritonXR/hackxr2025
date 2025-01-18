@@ -18,7 +18,7 @@ const MarqueeText: React.FC<MarqueeProps> = ({ text, direction }) => {
             className="overflow-hidden bg-background select-none"
             gradient={true}
             gradientColor={'var(--background)'}
-            speed={5}
+            speed={3}
         >
             <span className="font-black text-xl py-2 inline-block text-foreground">
             ✖ {text}&nbsp;
