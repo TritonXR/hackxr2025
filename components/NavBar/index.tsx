@@ -4,13 +4,14 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import HackXRLogo from '../HackXRLogo';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     // const [mounted, setMounted] = useState(false);
     const pathname = usePathname();
-
-    
+    const applyLink =
+        'https://docs.google.com/forms/d/e/1FAIpQLSfIIpqZpxVWPW904CReY_0yQmbnmeEMTjQohzgCQnFKcr9wHw/viewform?usp=dialog';
 
     const menuVariants = {
         closed: {
@@ -58,22 +59,12 @@ const Navbar = () => {
 
     const navItems = [
         { label: 'Info', href: '#info' },
-        { label: 'Rules', href: '#rules' },
+        { label: 'About', href: '#about' },
         { label: 'Sponsors', href: '#sponsors' },
         { label: 'FAQ', href: '#faq' },
     ];
 
     const isActive = (path: string) => pathname === path;
-
-    // const renderLogo = () => {
-    //   if (!mounted) return <div className="w-10 h-10" />;
-
-    //   return resolvedTheme === 'dark' ? (
-    //     <LogoSharp className="w-10 h-10 text-foreground hover:text-destructive transition-transform transform hover:rotate-180 duration-500" />
-    //   ) : (
-    //     <LogoGoop className="w-10 h-10 text-foreground hover:text-destructive transition-transform transform hover:rotate-180 duration-500" />
-    //   );
-    // };
 
     return (
         <nav className="select-none bg-background-transparent backdrop-blur-sm fixed w-full z-50">
@@ -81,10 +72,9 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex items-center">
-                        TMP LOGO
-                        {/* <Link href="/" className="text-xl font-bold">
-              {renderLogo()}
-            </Link> */}
+                        <Link href="/" className="text-xl font-bold">
+                            <HackXRLogo color='white' height='2rem'/>
+                        </Link>
                     </div>
 
                     {/* Desktop Menu */}
@@ -95,13 +85,21 @@ const Navbar = () => {
                                 href={item.href}
                                 className={`px-3 py-2 rounded-md text-sm font-bold transition-all duration-500 ${
                                     isActive(item.href)
-                                        ? 'text-foreground'
-                                        : 'text-dim hover:text-destructive hover:outline-2 hover:outline-offset-2 hover:outline-destructive'
+                                        ? 'text-highlight'
+                                        : 'text-foreground hover:text-highlight hover:outline-2 hover:outline-offset-2 hover:outline-highlight'
                                 }`}
                             >
                                 {item.label}
                             </Link>
                         ))}
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={applyLink}
+                            className="ml-4 px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm"
+                        >
+                            Apply
+                        </a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -145,7 +143,16 @@ const Navbar = () => {
                             exit="closed"
                             variants={menuVariants}
                         >
-                            <div className="px-2 pt-2 pb-3 h-screen space-y-1">
+                            <div className="flex flex-col items-center px-2 pt-2 pb-3 h-screen w-full space-y-1 ">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href={applyLink}
+                                    className="px-3 py-1 rounded-full bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-md"
+                                >
+                                    Apply
+                                </a>
+
                                 {navItems.map((item) => (
                                     <motion.div
                                         key={item.label}
@@ -154,11 +161,7 @@ const Navbar = () => {
                                     >
                                         <Link
                                             href={item.href}
-                                            className={`text-center block px-3 py-2 rounded-md font-bold transition-colors ${
-                                                isActive(item.href)
-                                                    ? 'text-background bg-foreground'
-                                                    : 'text-foreground hover:text-background hover:bg-destructive'
-                                            }`}
+                                            className="text-center block px-3 py-2 font-bold hover:bg-highlight rounded-full transition-colors"
                                             onClick={() => setIsOpen(false)}
                                         >
                                             {item.label}

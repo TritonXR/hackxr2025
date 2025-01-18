@@ -3,14 +3,29 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --highlight: #6c47ff;
+    --dim: #000000;
+    --accent: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #0a0a0a;
         --foreground: #ededed;
+        --highlight: #6c47ff;
+        --dim: #57526b;
+        --accent: #000000;
+    }
+}
+
+@layer base {
+    h1 {
+        @apply text-4xl font-bold;
+    }
+    h2 {
+        @apply text-lg font-bold;
     }
 }
 
