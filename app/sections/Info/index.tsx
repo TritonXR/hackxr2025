@@ -1,10 +1,9 @@
 import React from 'react';
-import CountdownTimer from './Components/countdownTimer';
+import CountdownTimer from './components/countdownTimer';
 
 function Info() {
     return (
-        <div id="info" className="pt-16 h-screen w-full">
-            Info
+        <div id="info" className="h-screen w-full">
             <CountdownTimer />
         </div>
     );
