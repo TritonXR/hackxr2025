@@ -21,7 +21,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-    title: 'HackXR 2025',
+    title: 'HackXR',
     description: 'Triton Extended Reality Hackathon 2025',
 };
 

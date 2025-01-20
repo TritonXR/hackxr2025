@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
+import { motion } from 'framer-motion';
 
 interface Sponsor {
     id: string;
@@ -68,8 +69,8 @@ const SponsorMarquee = () => {
 
     if (loading) {
         return (
-            <div className="h-screen flex items-center justify-center">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500" />
+            <div className="flex items-center justify-center">
+                <div className="w-8 h-8 m-24 bg-highlight animate-[spin_1.5s_linear_infinite]" />
             </div>
         );
     }
@@ -127,57 +128,78 @@ const SponsorMarquee = () => {
     };
 
     return (
-        <div className="pt-4 pb-12">
+        <div className="pt-4">
             {/* High Tier */}
-            <Marquee
-                autoFill={true}
-                direction="right"
-                className="py-4 w-full"
-                speed={20}
-                pauseOnHover={true}
+            <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: true }}
             >
-                {sponsorsByTier.High.map((sponsor) => (
-                    <SponsorCard
-                        key={sponsor.id}
-                        sponsor={sponsor}
-                        size="large"
-                    />
-                ))}
-            </Marquee>
+                <Marquee
+                    autoFill={true}
+                    direction="right"
+                    className="py-4 w-full"
+                    speed={20}
+                    pauseOnHover={true}
+                >
+                    {sponsorsByTier.High.map((sponsor) => (
+                        <SponsorCard
+                            key={sponsor.id}
+                            sponsor={sponsor}
+                            size="large"
+                        />
+                    ))}
+                </Marquee>
+            </motion.div>
 
             {/* Medium Tier */}
-            <Marquee
-                autoFill={true}
-                direction="left"
-                className="py-4"
-                speed={30}
-                pauseOnHover={true}
+            <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: true }}
             >
-                {sponsorsByTier.Medium.map((sponsor) => (
-                    <SponsorCard
-                        key={sponsor.id}
-                        sponsor={sponsor}
-                        size="medium"
-                    />
-                ))}
-            </Marquee>
+                <Marquee
+                    autoFill={true}
+                    direction="left"
+                    className="py-4"
+                    speed={30}
+                    pauseOnHover={true}
+                >
+                    {sponsorsByTier.Medium.map((sponsor) => (
+                        <SponsorCard
+                            key={sponsor.id}
+                            sponsor={sponsor}
+                            size="medium"
+                        />
+                    ))}
+                </Marquee>
+            </motion.div>
 
             {/* Low Tier */}
-            <Marquee
-                autoFill={true}
-                direction="right"
-                className="py-4"
-                speed={40}
-                pauseOnHover={true}
+            <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: true }}
             >
-                {sponsorsByTier.Low.map((sponsor) => (
-                    <SponsorCard
-                        key={sponsor.id}
-                        sponsor={sponsor}
-                        size="small"
-                    />
-                ))}
-            </Marquee>
+                <Marquee
+                    autoFill={true}
+                    direction="right"
+                    className="py-4"
+                    speed={40}
+                    pauseOnHover={true}
+                >
+                    {sponsorsByTier.Low.map((sponsor) => (
+                        <SponsorCard
+                            key={sponsor.id}
+                            sponsor={sponsor}
+                            size="small"
+                        />
+                    ))}
+                </Marquee>
+            </motion.div>
         </div>
     );
 };
