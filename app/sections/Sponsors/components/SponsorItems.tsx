@@ -69,9 +69,15 @@ const SponsorMarquee = () => {
 
     if (loading) {
         return (
-            <div className="flex items-center justify-center">
+            <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: true }}
+                className="flex items-center justify-center"
+            >
                 <div className="w-8 h-8 m-24 bg-highlight animate-[spin_1.5s_linear_infinite]" />
-            </div>
+            </motion.div>
         );
     }
 

@@ -28,19 +28,35 @@ function About() {
                     >
                         <AboutHeader />
                     </motion.div>
-                    <motion.h3
-                        initial={{ y: 100, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.8, ease: 'easeOut' }}
-                        viewport={{ once: true }}
-                        className="max-w-2xl text-center "
-                    >
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry&apos;s standard dummy text ever since the
-                        1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                    </motion.h3>
+                    <div className="flex flex-col md:flex-row">
+                        <motion.h3
+                            initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: 'easeOut' }}
+                            viewport={{ once: true }}
+                            className="max-w-80 bg-black/50 md:rounded-l-xl rounded-t-xl p-4 font-bold text-center md:text-right md:w-1/2"
+                        >
+                            Our mission is to inspire creativity and innovation
+                            in virtual reality by bringing together developers,
+                            designers, and visionaries to collaboratively push
+                            the boundaries of immersive technology.
+                        </motion.h3>
+
+                        <div className="hidden md:block w-1 bg-highlight self-stretch"></div>
+
+                        <motion.h3
+                            initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: 'easeOut' }}
+                            viewport={{ once: true }}
+                            className="max-w-80 bg-black/50 md:rounded-r-xl rounded-b-xl p-4 font-bold text-center md:text-left md:w-1/2"
+                        >
+                            Through hands-on collaboration, we empower
+                            participants to shape the future of extended
+                            reality, fostering a community of creators dedicated
+                            to building transformative experiences.
+                        </motion.h3>
+                    </div>
                 </div>
             </div>
         </section>
