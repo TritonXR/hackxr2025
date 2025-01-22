@@ -30,8 +30,8 @@ function About() {
                     </motion.div>
                     <div className="flex flex-col md:flex-row">
                         <motion.h3
-                            initial={{ y: 100, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1 }}
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }}
                             viewport={{ once: true }}
                             className="max-w-80 bg-black/50 md:rounded-l-xl rounded-t-xl p-4 font-bold text-center md:text-right md:w-1/2"
@@ -45,8 +45,8 @@ function About() {
                         <div className="hidden md:block w-1 bg-highlight self-stretch"></div>
 
                         <motion.h3
-                            initial={{ y: 100, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1 }}
+                            initial={{ x: 100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }}
                             viewport={{ once: true }}
                             className="max-w-80 bg-black/50 md:rounded-r-xl rounded-b-xl p-4 font-bold text-center md:text-left md:w-1/2"
