@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import CountdownTimer from './components/countdownTimer';
+import CountdownTimer from '@/app/sections/Info/components/countdownTimer';
 import { motion } from 'framer-motion';
 
 function Info() {
