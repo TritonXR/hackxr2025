@@ -18,7 +18,7 @@ function About() {
                         whileInView={{ opacity: 1, filter: 'blur(4px)' }}
                         className="w-full animate-[spin_300s_linear_infinite]"
                     >
-                        <AboutStars color="fill-highlight" className="w-full" />
+                        <AboutStars color="fill-highlight" className="w-full overflow-hidden" />
                     </motion.div>
                 </div>
                 <div className="relative z-10 h-full">
