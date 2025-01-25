@@ -19,23 +19,23 @@ const FAQItem: React.FC<FAQItemProp> = ({ question, answer }) => {
             className="group hover:cursor-pointer"
         >
             <div
-                className="bg-background flex w-full justify-between items-center py-4 px-6 text-left group-hover:border-highlight border-2 border-dim
+                className="bg-background group-hover:border-highlight flex w-full justify-between items-center py-4 px-6 text-left border-2 border-white
                 transition-all duration-700 ease-in-out"
             >
-                <h2 className="text-dim group-hover:text-highlight group-hover:translate-x-2 transition-all duration-700 ease-in-out">
+                <h2 className="text-white group-hover:translate-x-2 transition-all duration-700 ease-in-out">
                     {question}
                 </h2>
                 <ChevronDown
-                    className="h-5 w-5 text-dim group-hover:text-highlight transition-all duration-700 ease-in-out
+                    className="h-5 w-5 text-white group-hover:text-highlight transition-all duration-700 ease-in-out
                     group-hover:rotate-180"
                 />
             </div>
             <div 
-                className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-700 ease-in-out bg-dim rounded-b-xl group-hover:bg-highlight"
+                className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-700 ease-in-out bg-highlight rounded-b-xl"
             >
                 <div className="overflow-hidden">
                     <div className="px-10 py-4">
-                        <p className="text-background">{answer}</p>
+                        <p className="text-foreground">{answer}</p>
                     </div>
                 </div>
             </div>

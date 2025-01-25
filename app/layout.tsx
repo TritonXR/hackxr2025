@@ -23,6 +23,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
     title: 'HackXR',
     description: 'Triton Extended Reality Hackathon 2025',
+    icons: { icon: '/favicon.ico' }
 };
 
 export default function RootLayout({
