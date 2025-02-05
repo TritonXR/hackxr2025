@@ -16,7 +16,7 @@ function Sponsors() {
                     viewport={{ once: true }}
                     className="font-black text-5xl text-center"
                 >
-                    SPONSORS
+                    PARTNERS
                 </motion.h1>
                 <SponsorItems />
                 <motion.div
