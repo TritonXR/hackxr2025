@@ -4,11 +4,15 @@ import FAQItem from './components/FAQItem';
 const FAQData = [
     {
         question: 'Do I need experience to join?',
-        answer: 'No experience is needed! We will be hosting workshops prior to the event to help prep students for the Hackathon.',
+        answer: 'No experience needed! We\'ll be hosting workshops before and during the event to help prepare students for the Hackathon.',
     },
     {
         question: 'What do I need to bring?',
-        answer: 'Please bring your laptop, headset (if you have your own), and chargers.',
+        answer: 'Please bring your laptop that can run Unity and VRChat SDK, headset (if you have your own), and chargers. We also recommend bring power strip if you have one.',
+    },
+    {
+        question: 'Is there any software I need to download?',
+        answer: 'Please download Unity 2022.3.22f1 (has to be this version!) and VRChat Creator Companion (VRCCC) before the hackathon!',
     },
     {
         question: 'Do I need to bring or own a headset to participate?',
@@ -21,6 +25,10 @@ const FAQData = [
     {
         question: 'Does everyone on my team need to apply?',
         answer: 'Yes, admittances are tied to the individual, not the group.',
+    },
+    {
+        question: 'Where can I go to make a team?',
+        answer: 'You can find teammates or join an existing team on the Triton XR discord server! A forum will be created to help students form teams before the hackathon.',
     },
     {
         question: 'Should I have a team? How many people can be on my team?',
