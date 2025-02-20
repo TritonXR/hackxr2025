@@ -71,7 +71,7 @@ const Navbar = () => {
             <div className="mx-auto px-6">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <div className="flex items-center">
+                    <div className="flex items-start">
                         <Link href="/" className="text-xl font-bold">
                             <HackXRLogo color='white' height='2rem'/>
                         </Link>
