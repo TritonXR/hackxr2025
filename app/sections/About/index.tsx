@@ -11,7 +11,7 @@ function About() {
             id="about"
             className="h-screen w-full relative flex flex-col justify-center items-center p-8"
         >
-            <div>
+            <div className='w-full'>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0, filter: 'blur(20px)' }}
@@ -21,14 +21,14 @@ function About() {
                         <AboutStars color="fill-highlight" className="w-full overflow-hidden" />
                     </motion.div>
                 </div>
-                <div className="relative z-10 h-full">
+                <div className="overflow-hidden relative z-10 w-full">
                     <motion.div
                         initial={{ opacity: 0, filter: 'blur(20px)' }}
                         whileInView={{ opacity: 1, filter: 'blur(0px)' }}
                     >
                         <AboutHeader />
                     </motion.div>
-                    <div className="flex flex-col md:flex-row overflow-hidden">
+                    <div className="flex flex-col md:flex-row justify-center">
                         <motion.h3
                             initial={{ x: -100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}

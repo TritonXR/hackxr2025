@@ -73,7 +73,8 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className="flex items-center">
                         <Link href="/" className="text-xl font-bold">
-                            <HackXRLogo color='white' height='2rem'/>
+                            BESHSHd
+                            {/* <HackXRLogo color='white' height='2rem'/> */}
                         </Link>
                     </div>
 
