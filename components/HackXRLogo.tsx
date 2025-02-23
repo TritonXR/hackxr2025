@@ -9,9 +9,9 @@ const HackXRLogo = ({
     animation = true,
 }) => {
     return (
-        <div className="relative group flex items-center">
-            <div className="relative" style={{ height }}>
-                {/* HACK */}
+        <>
+            <div className="relative group">
+                {/* HACK  */}
                 <svg
                     viewBox="0 0 670 200"
                     width={width}
@@ -42,7 +42,7 @@ const HackXRLogo = ({
                 </svg>
             </div>
 
-            <style jsx>{`
+            <style global jsx>{`
                 .smooth-slide {
                     transition: transform 0.3s ease-out;
                 }
@@ -52,7 +52,7 @@ const HackXRLogo = ({
                     transition: transform 0.3s ease-in;
                 }
             `}</style>
-        </div>
+        </>
     );
 };
 
