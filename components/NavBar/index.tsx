@@ -68,10 +68,10 @@ const Navbar = () => {
 
     return (
         <nav className="select-none bg-background-transparent backdrop-blur-sm fixed w-full z-50">
-            <div className="mx-auto px-6 w-full">
+            <div className="mx-auto px-6 w-screen">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <div className="flex items-center justify-start flex-shrink-0">
+                    <div className="flex items-center">
                         <Link href="/" className="text-xl font-bold">
                             <HackXRLogo color='white' height='2rem'/>
                         </Link>
