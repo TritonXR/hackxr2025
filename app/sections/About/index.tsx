@@ -28,7 +28,7 @@ function About() {
                     >
                         <AboutHeader />
                     </motion.div>
-                    <div className="flex flex-col md:flex-row">
+                    <div className="flex flex-col md:flex-row overflow-hidden">
                         <motion.h3
                             initial={{ x: -100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
