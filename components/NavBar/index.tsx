@@ -96,7 +96,7 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             href={applyLink}
-                            className="ml-4 px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm"
+                            className="m-4 px-3 py-1 rounded-2xl bg-white text-black font-bold hover:scale-110 transition-transform duration-300 text-sm"
                         >
                             Apply
                         </a>
