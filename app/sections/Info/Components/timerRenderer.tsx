@@ -73,18 +73,25 @@ const TimerRenderer = ({
     completed,
 }: CountdownRenderProps) => {
     if (completed) {
-        const hackTheme =
-            process.env.NEXT_PUBLIC_HACK_THEME ||
-            'Please Contact Executive Board';
+        // const hackTheme =
+        //     process.env.NEXT_PUBLIC_HACK_THEME ||
+        //     'Please Contact Executive Board';
         return (
             <div className="text-center overflow-hidden">
-                <h3 className="text-dim">The Theme Is</h3>
+                <h3 className="text-dim">
+                    {/* The Theme Is */}
+                    HACKXR 2025 has concluded...
+                </h3>
                 <div className="w-32 h-0.5 bg-dim mx-auto mb-5" />
                 <h1 className="text-7xl font-black w-screen mb-5 py-5 bg-highlight">
-                    {hackTheme}
+                    {/* {hackTheme} */}
+                    2026 PENDING
                 </h1>
                 <div className="w-32 h-0.5 bg-dim mx-auto" />
-                <h3 className="mb-5 text-dim">Happy Hacking !</h3>
+                <h3 className="mb-5 text-dim">
+                    {/* Happy Hacking ! */}
+                    See you next time!
+                </h3>
             </div>
         );
     }

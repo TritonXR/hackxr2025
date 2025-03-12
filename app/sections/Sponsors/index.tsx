@@ -24,8 +24,9 @@ function Sponsors() {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     viewport={{ once: true }}
-                    className="text-md"
+                    className="text-sm"
                 >
+                    <h3 className='text-xl pb-4'>Special thanks to TXR Alumni for their dedicated support!</h3>
                     <h3>Want to be a part of the next HackXR?</h3>
                     <h3>
                         Contact us @{' '}
